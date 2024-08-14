@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@700&display=swap');
+*{
+    margin:  0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    scroll-behavior: smooth;
+
+}
+.header{
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #D3A221;
+}
+.header .logo{
+    font-family: 'Victor Mono', monospace;
+    color: #D3A221;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+
+
+.header ul li a{
+    color: #D3A221;
+    line-height: 50px;
+}
+.header ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.header ul li .btn{
+    color: black;
+    font-weight: bold;
+    margin : 12px 0;
+    line-height: 0;
+    padding: 20px ;
+}
+.header ul li .btn:hover{
+    background-color: #ab872e;
+}
+
+/* Home */
+.home{
+    
+    min-height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+.home .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home img{
+    border-radius: 100px;
+    filter: brightness(80%);    
+}
+.home h1{
+    color: #d3a021;
+    font-family: "Victor Mono", monospace;
+    text-transform: uppercase;    
+}
+.home .type{
+    font-size: xx-large; 
+    
+}
+.home .type #element{
+    color: #d3a021!important;
+    font-weight: bold;
+    font-size: xxx-large;
+    text-transform: uppercase;    
+}
+
+
+/* about */
+.about{
+    /* display: flex; */
+    justify-content: center;
+}
+.about .desc{  
+    
+    text-align: justify;
+    color: white;
+}
+h1{
+    color: #d3a021;
+}
+h4{
+    color:white;
+}
+.about h4{
+    color: #d3a021;
+    font-family: "Victor Mono",monospace;
+}
+.skills {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.progress-bar{
+    color: white;
+}
+
+
+
+/* projects */
+
+.project {
+    color:#D3A221;
+}
+.project-card {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #D3A221;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px; /* Space between cards */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #D3A221;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+    transform: scale(1.1);
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #D3A221;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.card-text {
+    font-size: 1rem;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    margin-bottom: 15px;
+    max-width: 80%;
+}
+
+.btn-warning {
+    border-color: #fff;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+.project .btn:hover{
+    background-color: #ab872e;
+    color: white;
+}
+
+
+
+/* Footer */
+/* Footer */
+.footer {
+    background-color: #111;
+    padding: 40px 0;
+    border-top: 2px solid #D3A221;
+}
+
+.footer-icon {
+    color: #D3A221;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-icon:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.footer-text {
+    color: #D3A221;
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: 'Victor Mono', monospace;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #D3A221;
+    font-family: 'Victor Mono', monospace;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer p:hover {
+   
+    transform: scale(1.1);
+}
+
+
+
+
+
+@media(max-width:600px){
+    .home img{
+        height: 400px;
+        margin-top: 50px;
+    }
+    .home{
+        text-align: center;
+        
+    }
+    .home .type{
+        margin-top: -50px;
+    }
+    .home .type #element{
+        font-size: x-large;
+    }
+    .header ul li a {
+        line-height: 20px ;
+    }
+   
+}

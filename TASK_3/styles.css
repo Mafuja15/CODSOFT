@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bg.avif');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    width: 330px;
+    background-color: black; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    box-shadow: 10px 10px 5px rgb(59, 76, 82);
+}
+
+.display {
+    background-color: black; 
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 50px;
+}
+
+.full-expression {
+    font-size: 1rem;
+    color: white;
+    min-height: 20px;
+}
+
+.current-display {
+    font-size: 2rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    padding: 10px;
+    border-top: 2px solid rgb(47, 46, 46);
+}
+
+.btn {
+    background-color: #414040; 
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+    border-radius: 100%;
+}
+
+.btn:hover {
+    background-color: #4b4646; 
+}
+
+.btn:active {
+    animation: click-animation 0.2s forwards;
+}
+
+#equal {
+    background-color: #e47c0d; 
+    color: #fff;
+}
+
+#equal:hover {
+    background-color: #f46208;
+}
+
+#delete {
+    background-color: rgb(141, 7, 7);
+}
+
+#delete:hover {
+    background-color: rgb(177, 9, 9);
+}
+
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(0.95);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}

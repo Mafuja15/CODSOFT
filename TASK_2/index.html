@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafuja's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header fixed-top">
+            <div class="col-md-4">
+                <ul class="nav justify-content-center">
+                    <li class="logo">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning nav-link" href="files/MafujaKhatun_Resume_withPhoto.pdf"
+                            download>Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <!-- Home Section -->
+        <div id="home" class="row home pt-5 mt-5 mb-5 pb-5">
+            <div class="col-md-6 image pt-5">
+                <img src="images/mafuja.jpg" alt="Mafuja" height="500px" width="auto">
+            </div>
+            <div class="col-md-6 type pt-5">
+                <div class="text-white text-center mt-4">
+                    Hi, I am
+                    <span id="element"></span>
+                </div>
+
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Mafuja Khatun', 'a Student', 'a Web Developer'],
+                        typeSpeed: 60,
+                        backDelay: 3000,
+                        loop: true,
+                        loopCount: Infinity
+                    });
+                </script>
+
+            </div>
+        </div>
+
+
+
+        <!-- About Section -->
+        <div id="about" class="row pt-5 ">
+            <div class="container about pt-5">
+                <div class="row justify-content-around">
+                    <div class="col-md-4">
+                        <h1 class="text-center">About Me</h1>
+
+                        <p class="pt-5 desc">I'm Mafuja Khatun, a passionate Web Developer dedicated to crafting
+                            innovative and user-friendly digital experiences. My work blends creativity and technical
+                            expertise to solve real-world problems and bring ideas to life. I thrive on challenges and
+                            am always eager to learn and grow. Outside of work, I enjoy exploring new technologies.
+                            Explore my projects and feel free to reach out—let's create something amazing together!</p>
+                    </div>
+
+                    <div class="col-md-6  text-center">
+                        <h1 class="text-center">Qualifications</h1>
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <h4 class="mb-4">Schooling</h4>
+                                <div class="row ">
+                                    <div class="desc">
+                                        <h5>Sree RamKrishna Sishutirtha High School(Dankuni,Hooghly)</h5><br> <br>
+                                        Class X (2019)<br>
+                                        Percentage
+                                        <div class="progress mb-4" role="progressbar" aria-label="Warning example"
+                                            aria-valuenow="90.43" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar bg-warning text-dark" style="width: 90.43%">90.43%
+                                            </div>
+                                        </div>
+
+
+                                        Class XII(2019-21) <br>
+                                        Percentage
+                                        <div class="progress" role="progressbar" aria-label="Warning example"
+                                            aria-valuenow="88.6" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar bg-warning text-dark" style="width:88.6%">88.6%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="mb-4">University</h4>
+                                <div class="row ">
+                                    <div class=" desc">
+                                        <h5>Guru Nanak Institute of Technology(Sodepur)</h5><br><br>
+                                        B.Tech in CSE (2021-25) <br>
+                                        CGPA(% upto 5th Sem)
+                                        <div class="progress" role="progressbar" aria-label="Warning example"
+                                            aria-valuenow="94.4" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar bg-warning text-dark" style="width: 94.4%">94.4%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Skills-->
+        <div id="skills" class="row skills mt-5 pt-5">
+            <div class="container pt-5 mt-5">
+                <div class="row d-flex justify-content-evenly align-items-center">
+                    <h1 class="text-center  mt-5 mb-5">Skills</h1>
+                    <div class="col-md-4">
+                        <h4 class="mt-4"> JAVA</h4>
+                        <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                        </div>
+                        <h4 class="mt-4">C</h4>
+                        <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                        </div>
+                        <h4 class="mt-4">C++</h4>
+                        <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <h4 class="mt-4">HTML</h4>
+                        <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                        </div>
+                        <h4 class="mt-4">CSS</h4>
+                        <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                        </div>
+                        <h4 class="mt-4">MySQL</h4>
+                        <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- projects -->
+        <div class="row project transition-section mt-5 mb-5" id="projects">
+            <div class="container mt-5">
+                <h1 class="text-center heading  mt-5 mb-5">MY PROJECTS</h1>
+                <div class="row justify-content-around">
+                    <!-- First Column -->
+                    <div class="col-md-4">
+                        <!-- First Card -->
+                        <div class="project-card">
+                            <img src="images/credit_card.jpg" class="card-img" alt="Project 1 Image">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title sub-heading emphasize">CREDIT CARD FRAUD DETECTION</h4>
+                                <p class="card-text">About
+                                    This is a Machine Learning project which uses algorithms like Logistic Regression
+                                    and Decision Tree and
+                                    learns on a training set and finally predicts and detects authenticity of credit
+                                    cards.</p>
+                                <a href="https://github.com/Mafuja15/Credit-Card-Fraud-Detection"
+                                    class="btn btn-warning" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <img src="images/baby_plant.webp" class="card-img" alt="Project 4 Image">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title sub-heading emphasize">AUTOMATED BABY PLANT MONITORING SYSTEM
+                                </h4>
+                                <p class="card-text"> This project automates irrigation using Arduino by monitoring soil moisture, rain, light, and humidity, and controls water flow for optimal plant care..</p>
+                                <a href="https://github.com/Mafuja15/Automated-Baby-Plant-Protection"
+                                    class="btn btn-warning" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <!-- Footer Section -->
+        <footer class="footer pt-5">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-3">
+                    <!-- Column for Phone -->
+                    <div class="col-md-3 mb-5">
+                        <a href="tel:+919330976712" title="Dial My Number" target="_blank">
+                            <i class="fa-solid fa-square-phone fa-2xl footer-icon"></i>
+                            <p class="footer-text mt-3">Phone</p>
+                        </a>
+                    </div>
+                    <!-- Column for Email -->
+                    <div class="col-md-3 mb-5">
+                        <a href="mailto:mafujak15102002@gmail.com" title="Email Me" target="_blank">
+                            <i class="fa-solid fa-square-envelope fa-2xl footer-icon"></i>
+                            <p class="footer-text mt-3">Email</p>
+                        </a>
+                    </div>
+                    <!-- Column for LinkedIn -->
+                    <div class="col-md-3 mb-5">
+                        <a href="https://www.linkedin.com/in/mafuja-khatun15/" title="Explore My LinkedIn Profile"
+                            target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl footer-icon"></i>
+                            <p class="footer-text mt-3">LinkedIn</p>
+                        </a>
+                    </div>
+                    <!-- Column for GitHub -->
+                    <div class="col-md-3 mb-5">
+                        <a href="https://github.com/Mafuja15" title="Go Through My Projects" target="_blank">
+                            <i class="fa-brands fa-square-github fa-2xl footer-icon"></i>
+                            <p class="footer-text mt-3">GitHub</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row text-center mb-2">
+                    <div class="col">
+                        <p style="color: #d3a221;">&copy; 2024 Mafuja Khatun. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

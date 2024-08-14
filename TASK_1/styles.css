@@ -1,0 +1,228 @@
+.navbar {
+    background-color: #800000;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    width: 100%;
+    transition: background-color 0.3s ease;
+
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: xx-large;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+.nav-item a{
+    transition: transform ease-in-out 0.3s;
+}
+.nav-item a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    font-weight: bold;
+    transition: transform ease-in-out 0.3s;
+}
+
+
+.hero {
+    background-image: url('images/bg.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    color: #fff;
+    text-align: center;
+    filter: brightness(80%);
+    
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.main-btn {
+    background-color: #800000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.main-btn:hover {
+    background-color:#d61c1c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+
+
+
+/* Featured products and categories styles */
+.card {
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.categories .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.categories .card-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center; 
+    padding: 1rem;
+    border-radius: 8px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    
+}
+.categories img{
+    filter:brightness(70%);
+}
+/* Hover effect to show text and zoom image */
+.categories .card:hover .card-body {
+    opacity: 1; /* Show the text on hover */
+}
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+   
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
+}
+
+
+
+/* Hover effect for categories */
+.featured-products .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Testimonial Section Styles */
+.testimonial-section {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 60px 0;
+}
+
+.testimonial-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #333;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-caption {
+    position: static;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-caption img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid #ff6f61; /* Adding a border to the image */
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.carousel-caption h5 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+    .col-auto .form-control{
+        
+        width: 300px!important;  
+    }
+}
+
+.newsletter {
+    background-color: #DAD4B5;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+.col-auto .form-control{
+    height: 50px;
+    width: 550px;  
+}
+
+.footer {
+    background-color: #982B1C;
+    color: #bbb;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    color: #fff;
+}
